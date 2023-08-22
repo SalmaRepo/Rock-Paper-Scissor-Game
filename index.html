@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script
+      src="https://kit.fontawesome.com/3d977f9d2f.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <h1>Rock Paper Scissor</h1>
+    <div class="popUp">
+      <div class="content">
+        <h2>What is Rock Paper Scissor Game?</h2>
+       
+        <p>
+          You are Player-1 and you are playing against Computer which is Player-2.
+          and you should choose between rock,paper,scissor.
+        </p>
+
+        <p>You have 5 chances to win or lose against Player 2</p>
+        
+        <ul>
+          <li>Rock wins over Scissor</li>
+          <li>Paper wins over Rock</li>
+          <li>Scissor wins over Rock</li>
+        </ul>
+      </div>
+
+      <div class="close">
+        <p class="close">x</p>
+      </div>
+     
+    </div>
+
+    <p class="chances">Number of Chances left: <span style="font-weight: bold; color: rgb(229, 255, 0);" class="chanceDisp">5<span></p>
+
+    <div class="score-container">
+      <div class="score">
+        <p>Your Score: </p>
+        <p class="scoreDisp">0
+          </p>
+      </div>
+  
+      <div class="score2">
+        <p>Player2 Score: </p>
+        <p class="scoreDisp2">0
+          </p>
+      </div>
+    </div>
+
+   
+    <div class="disp">
+      <div class="player1">
+        <button type="button" id="rock">
+          <img src="./images/rock.png" class="rock" alt="rock" />
+        </button>
+
+        <button id="paper">
+          <img src="./images/paper.png" class="paper" alt="paper" />
+        </button>
+        <button id="scissor">
+          <img src="./images/scissor.png" class="scissor" alt="scissor" />
+        </button>
+      </div>
+
+      <div class="playercomp">
+        <p id="result"></p>
+
+        <button id="player2"></button>
+      </div>
+    </div>
+
+    <div><a href="#" id="playAgain">Play Again</a></div>
+   
+
+    <script src="./index.js"></script>
+  </body>
+</html>

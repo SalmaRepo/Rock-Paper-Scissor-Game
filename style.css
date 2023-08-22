@@ -1,0 +1,214 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(8, 8, 8);
+  font-family: "Courier New", Courier, monospace;
+  padding: 1rem;
+}
+
+.popUp {
+  color: white;
+  display: none;
+  gap: 1rem;
+  text-align: left;
+  margin: 2rem 0 0 0;
+  position: absolute;
+  z-index: 2;
+  padding: 0.2rem;
+  background-color: rgb(33, 33, 33);
+  top: 2rem;
+}
+
+.close {
+  font-size: 3rem;
+}
+
+.content {
+  font-size: 1.5rem;
+  border: 1px solid white;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: left;
+  width: 80%;
+  background-color: rgb(68, 65, 65);
+}
+
+ul {
+  background-color: rgba(238, 241, 243, 0.358);
+  backdrop-filter: blur(5px);
+  list-style: none;
+  padding: 1rem 0.5rem;
+  border-radius: 2rem;
+}
+
+h1 {
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+button {
+  background-color: rgb(118, 115, 115);
+  backdrop-filter: blur(5px);
+  border: none;
+  border-radius: 50%;
+  width: 5rem;
+  height: 5rem;
+}
+
+.disp {
+  display: flex;
+  padding: 1rem;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+  /* height: 50vh; */
+  gap: 1rem;
+  background-color: rgba(8, 8, 8, 0.2);
+  backdrop-filter: blur(5px);
+}
+.player1,
+#player2 {
+  width: 100%;
+  height: 40%;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 2rem;
+  background-color: rgb(118, 115, 115);
+  backdrop-filter: blur(5px);
+}
+
+#player2 {
+  width: 35%;
+  padding: 0.2rem 0;
+}
+
+.playercomp {
+  display: none;
+  margin-left: 2rem;
+  justify-content: flex-end;
+  position: absolute;
+  gap: 7rem;
+}
+
+#result {
+  width: 5%;
+  color: white;
+  font-size: 2rem;
+  border-radius: 8rem;
+  margin-top: 1rem;
+}
+
+img {
+  width: 5rem;
+  height: 5rem;
+  backdrop-filter: blur(5px);
+  border-radius: 50%;
+}
+
+.score,
+.score2 {
+  display: flex;
+  margin-top: 3rem;
+  font-size: 1.5rem;
+  color: rgb(4, 4, 4);
+  gap: 1rem;
+  border: 2px solid white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40%;
+  background-color: rgb(157, 213, 227);
+  padding: 0.5rem;
+ 
+  
+}
+
+
+
+.scoreDisp,
+.scoreDisp2 {
+  font-weight: bold;
+  font-size: 2rem;
+  color: rgb(15, 16, 15);
+}
+
+.noneDisp {
+  display: none;
+}
+
+#playAgain {
+  display: none;
+  width: 80%;
+  font-size: 2rem;
+  background-color: rgb(181, 228, 228);
+  color: rgb(10, 10, 10);
+  text-decoration: none;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  text-align: center;
+  margin: 5rem auto;
+}
+
+.score-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chances {
+  font-size: 2rem;
+  color: white;
+}
+@media (min-width: 760px) {
+  .popUp {
+    width: 100%;
+    justify-content: center;
+
+    font-size: 1.5rem;
+  }
+
+  .content {
+    font-size: 1.5rem;
+    border-radius: 1rem;
+    padding: 3rem;
+    width: 50%;
+  }
+
+  #player2 {
+    width: 80%;
+  }
+
+  .playercomp {
+    display: none;
+    margin-left: 30rem;
+    justify-content: flex-end;
+    position: absolute;
+    gap: 10rem;
+  }
+
+  #result {
+    width: 100%;
+  }
+}
+
+.win{
+  background-color: rgb(155, 209, 155);
+}
+
+.lose{
+  background-color: rgb(250, 137, 132);
+}
